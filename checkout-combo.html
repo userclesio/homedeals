@@ -15,16 +15,9 @@
   'https://connect.facebook.net/en_US/fbevents.js');
 
   fbq('init', '1238580704010895');
+  fbq('init', '2294005824500868');
   fbq('track', 'PageView');
-  fbq('track', 'InitiateCheckout', {
-    content_name: 'Defy 30L Microwave + Russell Hobbs 6.5L Air Fryer + Mellerware Glass Kettle',
-    content_category: 'Kitchen Appliances',
-    content_type: 'product',
-    content_ids: ['kitchen-combo-3in1'],
-    num_items: 3,
-    value: 599,
-    currency: 'ZAR'
-  });
+  fbq('track', 'ViewContent');
 </script>
 
 <script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
@@ -624,27 +617,10 @@ document.getElementById('deliveryForm').addEventListener('submit', function(e){
   document.getElementById('formSection').style.display = 'none';
   document.getElementById('orderReview').style.display = 'block';
 
-  fbq('track', 'AddPaymentInfo', {
-    content_name: 'Kitchen Combo - Delivery Saved',
-    content_category: 'Kitchen Appliances',
-    content_ids: ['kitchen-combo-3in1'],
-    value: 599,
-    currency: 'ZAR'
-  });
-
   window.scrollTo(0, 0);
 });
 
 document.getElementById('completeBtn').addEventListener('click', function(){
-  fbq('track', 'Purchase', {
-    content_name: 'Defy 30L Microwave + Russell Hobbs 6.5L Air Fryer + Mellerware Glass Kettle',
-    content_category: 'Kitchen Appliances',
-    content_type: 'product',
-    content_ids: ['kitchen-combo-3in1'],
-    num_items: 3,
-    value: 599,
-    currency: 'ZAR'
-  });
   window.location.href = 'https://makavisual.online/loja/kitchencombo';
 });
 </script>
