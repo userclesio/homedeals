@@ -1,0 +1,648 @@
+<!DOCTYPE html><html lang="pt"><head>
+
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e);
+  s.parentNode.insertBefore(t,s)
+  }(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '1238580704010895');
+  fbq('track', 'PageView');
+  fbq('track', 'ViewContent', {
+    content_name: 'Kitchen Combo Landing',
+    content_category: 'Kitchen Appliances',
+    content_type: 'product',
+    content_ids: ['kitchen-combo-3in1'],
+    value: 599,
+    currency: 'ZAR'
+  });
+</script>
+
+<script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+
+<script>
+  window.pixelId = "67918adf0b80f52dd2589822";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script><script async="" defer="" src="js/pixel.js"></script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discover Your Discount - Kitchen Combo</title>
+
+<style>
+  :root{
+    --blue: #0b6ecb;
+    --green: #178a3b;
+    --gold: #f4b400;
+    --danger: #d32f2f;
+  }
+
+  *{ box-sizing: border-box; margin: 0; padding: 0; }
+  html, body{ height: 100%; }
+  body{
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: #f5f5f5;
+    color: #111;
+    overflow-x: hidden;
+  }
+
+  /* ===== TOPBAR ===== */
+  .topbar{
+    height: 56px;
+    background: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .topbar img{
+    height: 28px;
+    width: auto;
+  }
+
+  /* ===== SCREENS ===== */
+  .screen{
+    display: none;
+    min-height: calc(100vh - 56px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px 40px;
+    text-align: center;
+    animation: fadeIn .35s ease;
+  }
+  .screen.is-active{ display: flex; }
+
+  @keyframes fadeIn{
+    from{ opacity: 0; transform: translateY(12px); }
+    to{ opacity: 1; transform: translateY(0); }
+  }
+
+  /* ===== LANDING (screen 0) ===== */
+  .landing-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #0b6ecb, #0d8de8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    box-shadow: 0 8px 28px rgba(11,110,203,.3);
+  }
+  .landing-icon svg{
+    width: 40px; height: 40px; color: #fff;
+  }
+
+  .landing-title{
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #111;
+    margin-bottom: 14px;
+    letter-spacing: -0.5px;
+  }
+  .landing-title span{
+    color: var(--blue);
+  }
+
+  .landing-sub{
+    font-size: 16px;
+    color: #555;
+    line-height: 1.45;
+    max-width: 320px;
+    margin-bottom: 36px;
+  }
+
+  .btn-primary{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 56px;
+    padding: 0 40px;
+    border-radius: 999px;
+    border: 0;
+    background: var(--green);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(23,138,59,.35);
+    transition: transform .12s;
+    text-decoration: none;
+  }
+  .btn-primary:active{ transform: scale(.97); }
+
+  .btn-buy{
+    background: linear-gradient(135deg, #178a3b, #1da34a);
+    box-shadow: 0 6px 24px rgba(23,138,59,.4);
+    font-size: 20px;
+    height: 60px;
+    padding: 0 48px;
+  }
+
+  /* ===== COUPON SCREENS ===== */
+  .coupon-step{
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--blue);
+    border-radius: 999px;
+    padding: 4px 14px;
+    margin-bottom: 20px;
+    letter-spacing: .3px;
+  }
+
+  .coupon-img{
+    width: 100%;
+    max-width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.12);
+    margin-bottom: 20px;
+  }
+
+  .coupon-prompt{
+    font-size: 15px;
+    color: #444;
+    line-height: 1.4;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .coupon-input-row{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 12px;
+  }
+
+  .coupon-input{
+    flex: 1;
+    height: 50px;
+    border: 2px solid #d0d0d0;
+    border-radius: 12px;
+    padding: 0 16px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+    text-align: center;
+  }
+  .coupon-input:focus{ border-color: var(--blue); }
+  .coupon-input.is-wrong{
+    border-color: var(--danger);
+    animation: shake .4s ease;
+  }
+
+  @keyframes shake{
+    0%,100%{ transform: translateX(0); }
+    20%{ transform: translateX(-8px); }
+    40%{ transform: translateX(8px); }
+    60%{ transform: translateX(-6px); }
+    80%{ transform: translateX(6px); }
+  }
+
+  .coupon-submit{
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 12px;
+    border: 0;
+    background: var(--blue);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: transform .12s;
+  }
+  .coupon-submit:active{ transform: scale(.97); }
+
+  .coupon-error{
+    color: var(--danger);
+    font-size: 13px;
+    font-weight: 600;
+    height: 18px;
+    margin-bottom: 8px;
+  }
+
+  .coupon-hint{
+    font-size: 12px;
+    color: #999;
+    margin-top: 4px;
+  }
+
+  /* ===== POP-UP OVERLAY ===== */
+  .popup-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    padding: 20px;
+    animation: fadeIn .25s ease;
+  }
+  .popup-overlay.is-open{ display: flex; }
+
+  .popup{
+    background: #fff;
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+    max-width: 340px;
+    width: 100%;
+    box-shadow: 0 12px 48px rgba(0,0,0,.2);
+    animation: popIn .35s cubic-bezier(.34,1.56,.64,1);
+  }
+
+  @keyframes popIn{
+    from{ opacity: 0; transform: scale(.85); }
+    to{ opacity: 1; transform: scale(1); }
+  }
+
+  .popup-check{
+    width: 64px;
+    height: 64px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #178a3b, #1da34a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    box-shadow: 0 4px 16px rgba(23,138,59,.3);
+  }
+  .popup-check svg{
+    width: 32px; height: 32px; color: #fff;
+  }
+
+  .popup-title{
+    font-size: 22px;
+    font-weight: 900;
+    color: #111;
+    margin-bottom: 8px;
+    letter-spacing: -.3px;
+  }
+
+  .popup-desc{
+    font-size: 15px;
+    color: #444;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+
+  .popup-prices{
+    margin-bottom: 20px;
+  }
+  .popup-was{
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+    font-weight: 600;
+  }
+  .popup-now{
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--green);
+    display: block;
+    margin-top: 4px;
+    letter-spacing: -0.5px;
+  }
+
+  .popup-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 0 36px;
+    border-radius: 999px;
+    border: 0;
+    background: var(--blue);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    letter-spacing: .3px;
+    transition: transform .12s;
+  }
+  .popup-btn:active{ transform: scale(.97); }
+
+  /* ===== FINAL SCREEN ===== */
+  .final-confetti{
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .final-title{
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.15;
+    color: #111;
+    margin-bottom: 8px;
+    letter-spacing: -.3px;
+  }
+  .final-title span{
+    color: var(--green);
+  }
+
+  .final-combo-label{
+    font-size: 14px;
+    font-weight: 700;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .final-was{
+    font-size: 20px;
+    color: #999;
+    text-decoration: line-through;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .final-now{
+    font-size: 52px;
+    font-weight: 900;
+    color: var(--green);
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .final-saved{
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 32px;
+  }
+  .final-saved strong{
+    color: var(--danger);
+    font-weight: 800;
+  }
+
+  .final-combo-img{
+    width: 100%;
+    max-width: 280px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.1);
+  }
+
+  /* progress bar */
+  .progress{
+    width: 100%;
+    max-width: 320px;
+    height: 6px;
+    background: #e0e0e0;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  .progress-fill{
+    height: 100%;
+    background: var(--blue);
+    border-radius: 999px;
+    transition: width .5s ease;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <img src="images/logo-takealot.svg" alt="takealot.com">
+</header>
+
+<!-- SCREEN 0: LANDING -->
+<div class="screen is-active" id="screen0">
+  <div class="landing-icon">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+      <line x1="7" y1="7" x2="7.01" y2="7"/>
+    </svg>
+  </div>
+
+  <h1 class="landing-title">DISCOVER YOUR <span>DISCOUNT</span></h1>
+  <p class="landing-sub">Answer quickly and unlock exclusive coupons on the kitchen combo.</p>
+
+  <button class="btn-primary" id="btnStart">START NOW</button>
+</div>
+
+<!-- SCREEN 1: AIR FRYER COUPON -->
+<div class="screen" id="screen1">
+  <span class="coupon-step">COUPON 1 OF 3</span>
+
+  <div class="progress"><div class="progress-fill" style="width:33%"></div></div>
+
+  <img class="coupon-img" src="images/MICRO COUPON.jpg" alt="Air Fryer Coupon">
+
+  <p class="coupon-prompt">Enter your coupon code correctly to unlock the discount.</p>
+
+  <div class="coupon-input-row">
+    <input class="coupon-input" id="input1" type="text" placeholder="Enter the code" autocomplete="off" spellcheck="false">
+    <button class="coupon-submit" id="submit1">UNLOCK</button>
+  </div>
+  <div class="coupon-error" id="error1"></div>
+</div>
+
+<!-- SCREEN 2: MICROWAVE COUPON -->
+<div class="screen" id="screen2">
+  <span class="coupon-step">COUPON 2 OF 3</span>
+
+  <div class="progress"><div class="progress-fill" style="width:66%"></div></div>
+
+  <img class="coupon-img" src="images/AIR COUPON.jpg" alt="Microwave Coupon">
+
+  <p class="coupon-prompt">Enter your coupon code correctly to unlock the discount.</p>
+
+  <div class="coupon-input-row">
+    <input class="coupon-input" id="input2" type="text" placeholder="Enter the code" autocomplete="off" spellcheck="false">
+    <button class="coupon-submit" id="submit2">UNLOCK</button>
+  </div>
+  <div class="coupon-error" id="error2"></div>
+</div>
+
+<!-- SCREEN 3: GLASS KETTLE COUPON -->
+<div class="screen" id="screen3">
+  <span class="coupon-step">COUPON 3 OF 3</span>
+
+  <div class="progress"><div class="progress-fill" style="width:100%"></div></div>
+
+  <img class="coupon-img" src="images/KETTLE COUPON.jpg" alt="Glass Kettle Coupon">
+
+  <p class="coupon-prompt">Enter your coupon code correctly to unlock the discount.</p>
+
+  <div class="coupon-input-row">
+    <input class="coupon-input" id="input3" type="text" placeholder="Enter the code" autocomplete="off" spellcheck="false">
+    <button class="coupon-submit" id="submit3">UNLOCK</button>
+  </div>
+  <div class="coupon-error" id="error3"></div>
+</div>
+
+<!-- SCREEN 4: FINAL -->
+<div class="screen" id="screen4">
+  <div class="final-confetti">🎉</div>
+
+  <h2 class="final-title">YOU ACCUMULATED <span>R2,399</span> IN DISCOUNTS!</h2>
+
+  <img class="final-combo-img" src="images/kitchen-combo1.png" alt="Kitchen Combo">
+
+  <div class="final-combo-label">Full Combo</div>
+  <div class="final-was">R3,199</div>
+  <div class="final-now">R599</div>
+  <p class="final-saved">You saved more than <strong>80%</strong> on the entire combo</p>
+
+  <a href="kitchen-combo.html" class="btn-primary btn-buy">BUY NOW</a>
+</div>
+
+<!-- POP-UP 1: AIR FRYER -->
+<div class="popup-overlay" id="popup1">
+  <div class="popup">
+    <div class="popup-check">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+    </div>
+    <div class="popup-title">CONGRATULATIONS!</div>
+    <p class="popup-desc">You unlocked <strong>78% OFF</strong> on the Air Fryer</p>
+    <div class="popup-prices">
+      <span class="popup-was">Was: R899</span>
+      <span class="popup-now">NOW: R209</span>
+    </div>
+    <button class="popup-btn" id="popupBtn1">CONTINUE</button>
+  </div>
+</div>
+
+<!-- POP-UP 2: MICROWAVE -->
+<div class="popup-overlay" id="popup2">
+  <div class="popup">
+    <div class="popup-check">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+    </div>
+    <div class="popup-title">CONGRATULATIONS!</div>
+    <p class="popup-desc">You unlocked more discount on the <strong>Microwave</strong></p>
+    <div class="popup-prices">
+      <span class="popup-was">Was: R1,199</span>
+      <span class="popup-now">NOW: R349</span>
+    </div>
+    <button class="popup-btn" id="popupBtn2">CONTINUE</button>
+  </div>
+</div>
+
+<!-- POP-UP 3: GLASS KETTLE -->
+<div class="popup-overlay" id="popup3">
+  <div class="popup">
+    <div class="popup-check">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+    </div>
+    <div class="popup-title">CONGRATULATIONS!</div>
+    <p class="popup-desc">You unlocked more discount on the <strong>Glass Kettle</strong></p>
+    <div class="popup-prices">
+      <span class="popup-was">Was: R599</span>
+      <span class="popup-now">NOW: R149</span>
+    </div>
+    <button class="popup-btn" id="popupBtn3">SEE MY TOTAL DISCOUNT</button>
+  </div>
+</div>
+
+<script>
+  var screens = [
+    document.getElementById("screen0"),
+    document.getElementById("screen1"),
+    document.getElementById("screen2"),
+    document.getElementById("screen3"),
+    document.getElementById("screen4")
+  ];
+
+  function showScreen(idx){
+    screens.forEach(function(s){ s.classList.remove("is-active"); });
+    screens[idx].classList.add("is-active");
+    window.scrollTo(0, 0);
+  }
+
+  // Landing → Coupon 1
+  document.getElementById("btnStart").addEventListener("click", function(){
+    fbq('trackCustom', 'StartCouponFlow', { content_name: 'Kitchen Combo' });
+    showScreen(1);
+  });
+
+  // Coupon validation
+  var codes = [
+    { input: "input1", submit: "submit1", error: "error1", code: "AIRFRY400", popup: "popup1" },
+    { input: "input2", submit: "submit2", error: "error2", code: "MICRO300",  popup: "popup2" },
+    { input: "input3", submit: "submit3", error: "error3", code: "KETTLE200", popup: "popup3" }
+  ];
+
+  codes.forEach(function(c){
+    var inputEl  = document.getElementById(c.input);
+    var submitEl = document.getElementById(c.submit);
+    var errorEl  = document.getElementById(c.error);
+    var popupEl  = document.getElementById(c.popup);
+
+    function tryCode(){
+      var val = inputEl.value.trim().toUpperCase();
+      if(val === c.code){
+        errorEl.textContent = "";
+        inputEl.classList.remove("is-wrong");
+        fbq('trackCustom', 'CouponUnlocked', { coupon_code: c.code, content_name: 'Kitchen Combo' });
+        popupEl.classList.add("is-open");
+      } else {
+        errorEl.textContent = "Wrong code. Try again!";
+        inputEl.classList.add("is-wrong");
+        setTimeout(function(){ inputEl.classList.remove("is-wrong"); }, 500);
+      }
+    }
+
+    submitEl.addEventListener("click", tryCode);
+    inputEl.addEventListener("keydown", function(e){
+      if(e.key === "Enter") tryCode();
+    });
+  });
+
+  // Pop-up buttons → next screen
+  document.getElementById("popupBtn1").addEventListener("click", function(){
+    document.getElementById("popup1").classList.remove("is-open");
+    showScreen(2);
+  });
+
+  document.getElementById("popupBtn2").addEventListener("click", function(){
+    document.getElementById("popup2").classList.remove("is-open");
+    showScreen(3);
+  });
+
+  document.getElementById("popupBtn3").addEventListener("click", function(){
+    document.getElementById("popup3").classList.remove("is-open");
+    fbq('track', 'Lead', {
+      content_name: 'Kitchen Combo - All Coupons Unlocked',
+      content_category: 'Kitchen Appliances',
+      value: 599,
+      currency: 'ZAR'
+    });
+    showScreen(4);
+  });
+</script>
+
+</body></html>

